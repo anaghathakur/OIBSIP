@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="="UTF-8>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <!---Font awesome cnd font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class ="logo-text">Anagha Thakur</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class ="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="Profile.jpeg.jpg" alt="Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm<span class=""> Frontend Devloper</span></h5>
+                    <h1>Alen Mercy</h1>
+                    <p>As a frontend devloper, I specialize in creating beautifil and functional website using HTML, css,JavaScript,and other front-end technologies. I'm dedicated to delivering high qualitywork that meets the need of y clients and exceeds their expectations. I'm committed to stying up-to-date with the latest devlopment in front-end devlopment and aim to create website that not only look greate but also perform brilliantly,providing a seamless experiance for users and delivering real value to businesses. 
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /**creating button click hide navbar**/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector("navllinks");
+        var nav=document.querySelector("navllinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+    </script>
+</body>
+
+</html>
