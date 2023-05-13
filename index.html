@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Era of Digital Journey - Full Stack Developer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Era of Digital Journey</h1>
+      <p class="tagline">Unlock the potential of your business with our cutting-edge full stack services. From web and mobile development to seamless integration and innovative solutions, we empower your digital journey for success. Maximize efficiency, drive growth, and stay ahead of the competition with our comprehensive expertise.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services-container">
+      <h2>Services</h2>
+      <div class="service-card">
+        <img src="PICTURE1.jpg" alt="Service 1" onclick="showDetails(1)">
+        <h3>Web Development</h3>
+      </div>
+      <div class="service-card">
+        <img src="PICTURE2.jpg" alt="Service 2" onclick="showDetails(2)">
+        <h3>Mobile App Development</h3>
+      </div>
+      <div class="service-card">
+        <img src="PICTURE3.png" alt="Service 3" onclick="showDetails(3)">
+        <h3>Database Design</h3>
+      </div>
+      <div class="service-card">
+        <img src="PICTURE4.png" alt="Service 4" onclick="showDetails(4)">
+        <h3>UI/UX Design</h3>
+      </div>
+      <div class="service-card">
+        <img src="PICTURE5.png" alt="Service 5" onclick="showDetails(5)">
+        <h3>Testing & QA</h3>
+      </div>
+      <div class="service-card">
+        <img src="Picture6.jpg" alt="Service 6" onclick="showDetails(6)">
+        <h3>Deployment & Maintenance</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="details" class="hidden">
+    <div class="details-container">
+      <button onclick="hideDetails()">Close</button>
+      <img id="service-image" src="" alt="Service Image">
+      <h2 id="service-title"></h2>
+      <p id="service-description"></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact</h2>
+      <p>Connect with me on:</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
